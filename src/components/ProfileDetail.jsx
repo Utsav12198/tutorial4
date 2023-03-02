@@ -1,17 +1,8 @@
 import React from "react";
-import {
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Grid,
-  Paper,
-  Typography,
-} from "@mui/material";
+import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 export const ProfileDetail = () => {
   const params = useParams();
