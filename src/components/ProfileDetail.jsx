@@ -39,6 +39,16 @@ export const ProfileDetail = () => {
             Address: {detail.address}
           </Typography>
           <Typography variant="body2" color="text.secondary">
+            Friends:
+          </Typography>
+          {detail.friends?.map((index) => {
+            return (
+              <Typography variant="body2" color="text.secondary">
+                {index.name}
+              </Typography>
+            );
+          })}
+          <Typography variant="body2" color="text.secondary">
             Balance: {detail.balance}
           </Typography>
           <Typography variant="body2" color="text.secondary">
